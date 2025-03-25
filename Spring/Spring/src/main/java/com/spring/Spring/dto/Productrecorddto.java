@@ -2,6 +2,8 @@ package com.spring.Spring.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import java.math.BigDecimal;
 
-public record Clienterecorddto(@NotBlank@NotNull String cdempresa, @NotBlank String nmcliente) {
+public record Productrecorddto(@NotBlank String nmproduto, @NotNull BigDecimal vlproduto) {
+
 }

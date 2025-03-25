@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front com API</title>
+    <link rel="stylesheet" href="..\CSS\index.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>API de cliente</h1>
+
+        <button id="getDataBtn">Consumir Dados Metodo(GET)</button>
+        <input type="number" id="id" placeholder="Digite o ID do cliente, ou consulte todos apenas apertando o botão acima">
+        <div class="input-group">
+            <label for="idclienteDisplay">ID do cliente:</label>
+            <input type="text" id="idclienteDisplay" readonly>
+        </div>
+        <div class="input-group">
+            <label for="nmclienteDisplay">Nome do cliente:</label>
+            <input type="text" id="nmclienteDisplay" readonly>
+        </div>
+        <div class="input-group">
+            <label for="cdempresaDisplay">Valor do cliente:</label>
+            <input type="number" id="cdempresaDisplay" readonly>
+        </div>
+
+        <textarea id="result" readonly></textarea>
+
+        <input type="text" id="nmcliente" placeholder="Nome do cliente">
+        <input type="number" id="cdempresa" placeholder="Codigo da empresa">
+        <button id="sendDataBtn">Enviar Dados Metodo(POST)</button>
+    </div>
+
+    <script src="..\JS\index2.js"></script>
+    
+</body>
+</html>
